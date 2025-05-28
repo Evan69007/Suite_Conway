@@ -1,14 +1,14 @@
-def decoupeChaine(string):
-	char = string[0]
-	resultStr = "" + char
+# def decoupeChaine(string):
+# 	char = string[0]
+# 	resultStr = "" + char
 	
-	for i in range(1, len(string)):
-		if string[i] != char:
-			resultStr += " "
-			char = string[i]
-		resultStr += string[i]
+# 	for i in range(1, len(string)):
+# 		if string[i] != char:
+# 			resultStr += " "
+# 			char = string[i]
+# 		resultStr += string[i]
 	
-	return (resultStr)
+# 	return (resultStr)
 
 
 # print(decoupeChaine("aabbbca"))
