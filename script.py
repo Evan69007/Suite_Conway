@@ -35,7 +35,12 @@ def suiteConway(char, n):
 		return (newString)
 	if (n < 0):
 		return
-	print(suiteConway(newString, n-1))
-	return(newString)
+	if (len(newString) == 2):
+		print(char)
+		print(newString)
+		return(suiteConway(newString, n - 2))
+	else:
+		print(newString)
+		return(suiteConway(newString, n - 1))
 
 suiteConway('a', 7)
