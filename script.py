@@ -30,11 +30,12 @@ def decritChaine(string):
 
 
 def suiteConway(char, n):
-	string = char
-	i = 0
-	while i < n:
-		print(string)
-		string = decritChaine(string)
-		i += 1
+	newString = decritChaine(char)
+	if (n == 0):
+		return (newString)
+	if (n < 0):
+		return
+	print(suiteConway(newString, n-1))
+	return(newString)
 
 suiteConway('a', 7)
